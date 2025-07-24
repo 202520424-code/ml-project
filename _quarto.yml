@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+  
+website:
+  title: "2025 창의융합과제연구"
+  navbar:
+    left:
+      - href: project1.ipynb
+        text: project1
+      - href: project2.ipynb
+        text: Project2
+      - href: myproject.qmd
+        text: Project 타이타닉
+
+format:
+  html:
+    theme:
+      - superhero
+      - brand
+    css: styles.css
+    toc: true
+
+
+
