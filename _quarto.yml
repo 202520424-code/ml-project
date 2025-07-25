@@ -10,7 +10,7 @@ website:
         text: project1
       - href: project2.ipynb
         text: Project2
-      - href: myproject.qmd
+      - href: project3.ipynb
         text: Project 타이타닉
 
 format:

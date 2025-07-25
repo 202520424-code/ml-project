@@ -136,7 +136,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Project2</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./myproject.qmd"> 
+    <a class="nav-link" href="./project3.html"> 
 <span class="menu-text">Project 타이타닉</span></a>
   </li>  
 </ul>
@@ -469,116 +469,28 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div id="c420ab5e-a385-4956-93b8-8fa2b7a26388" class="cell" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df_train.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="10">
-<div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">MedInc</th>
-<th data-quarto-table-cell-role="th">HouseAge</th>
-<th data-quarto-table-cell-role="th">AveRooms</th>
-<th data-quarto-table-cell-role="th">AveBedrms</th>
-<th data-quarto-table-cell-role="th">Population</th>
-<th data-quarto-table-cell-role="th">AveOccup</th>
-<th data-quarto-table-cell-role="th">Latitude</th>
-<th data-quarto-table-cell-role="th">Longitude</th>
-<th data-quarto-table-cell-role="th">MedHouseVal</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">7061</td>
-<td>4.1312</td>
-<td>35.0</td>
-<td>5.882353</td>
-<td>0.975490</td>
-<td>1218.0</td>
-<td>2.985294</td>
-<td>33.93</td>
-<td>-118.02</td>
-<td>1.93800</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">14689</td>
-<td>2.8631</td>
-<td>20.0</td>
-<td>4.401210</td>
-<td>1.076613</td>
-<td>999.0</td>
-<td>2.014113</td>
-<td>32.79</td>
-<td>-117.09</td>
-<td>1.69700</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">17323</td>
-<td>4.2026</td>
-<td>24.0</td>
-<td>5.617544</td>
-<td>0.989474</td>
-<td>731.0</td>
-<td>2.564912</td>
-<td>34.59</td>
-<td>-120.14</td>
-<td>2.59800</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">10056</td>
-<td>3.1094</td>
-<td>14.0</td>
-<td>5.869565</td>
-<td>1.094203</td>
-<td>302.0</td>
-<td>2.188406</td>
-<td>39.26</td>
-<td>-121.00</td>
-<td>1.36100</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">15750</td>
-<td>3.3068</td>
-<td>52.0</td>
-<td>4.801205</td>
-<td>1.066265</td>
-<td>1526.0</td>
-<td>2.298193</td>
-<td>37.77</td>
-<td>-122.45</td>
-<td>5.00001</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
 <div id="43135356-a515-424a-a376-7aec4862d1d6" class="cell" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 중위 주택 가격에 대한 분포</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">5</span>))</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>sns.histplot(df_train[<span class="st">'MedHouseVal'</span>], color<span class="op">=</span><span class="st">'c'</span>, alpha<span class="op">=</span><span class="fl">0.77</span>)</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 중위 주택 가격에 대한 분포</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">5</span>))</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>sns.histplot(df_train[<span class="st">'MedHouseVal'</span>], color<span class="op">=</span><span class="st">'c'</span>, alpha<span class="op">=</span><span class="fl">0.77</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="project1_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="project1_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 <div id="5be56d15-650e-481f-80c4-7521f4b6a837" class="cell" data-execution_count="12">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 중위 주택 가격에 대한 분포</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">3</span>))</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">'MedHouseVal'</span>, color<span class="op">=</span><span class="st">'skyblue'</span>,data<span class="op">=</span>df_train,)</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 중위 주택 가격에 대한 분포</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">3</span>))</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">'MedHouseVal'</span>, color<span class="op">=</span><span class="st">'skyblue'</span>,data<span class="op">=</span>df_train,)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="project1_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="project1_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -591,29 +503,29 @@ dtype: int64</code></pre>
 <li>히스토그램과 상자 그림을 살펴보면 중위 주택 가격이 매우 높은 이상값이 많이 존재</li>
 </ul>
 <div id="00361ad3-58e0-45c7-9d9b-f531e2f16cc8" class="cell" data-execution_count="13">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 산점도</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>sns.pairplot(df_train, height<span class="op">=</span><span class="fl">0.8</span>, plot_kws<span class="op">=</span>{<span class="st">'s'</span>:<span class="dv">5</span>}, diag_kind<span class="op">=</span><span class="st">'kde'</span>)</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 산점도</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>sns.pairplot(df_train, height<span class="op">=</span><span class="fl">0.8</span>, plot_kws<span class="op">=</span>{<span class="st">'s'</span>:<span class="dv">5</span>}, diag_kind<span class="op">=</span><span class="st">'kde'</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="project1_files/figure-html/cell-11-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="project1_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 <div id="a8db39e3-dc07-4a1a-bfd6-d7691e30b3a2" class="cell" data-execution_count="14">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 상관계수</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>corr_train<span class="op">=</span>df_train.corr()</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>upp_mat <span class="op">=</span> np.triu(corr_train)</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">6</span>))</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>sns.heatmap(corr_train, annot<span class="op">=</span><span class="va">True</span>, mask<span class="op">=</span>upp_mat,vmin<span class="op">=-</span><span class="dv">1</span>, vmax<span class="op">=</span><span class="dv">1</span>, cmap<span class="op">=</span><span class="st">'BrBG'</span>)</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 상관계수</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>corr_train<span class="op">=</span>df_train.corr()</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>upp_mat <span class="op">=</span> np.triu(corr_train)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">6</span>))</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>sns.heatmap(corr_train, annot<span class="op">=</span><span class="va">True</span>, mask<span class="op">=</span>upp_mat,vmin<span class="op">=-</span><span class="dv">1</span>, vmax<span class="op">=</span><span class="dv">1</span>, cmap<span class="op">=</span><span class="st">'BrBG'</span>)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="project1_files/figure-html/cell-12-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="project1_files/figure-html/cell-11-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -628,20 +540,20 @@ dtype: int64</code></pre>
 <section id="회귀모델-학습" class="level2">
 <h2 class="anchored" data-anchor-id="회귀모델-학습">5. 회귀모델 학습</h2>
 <div id="886ee8e4-af55-43c3-a888-5fe645121603" class="cell" data-execution_count="15">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 상관관계가 존재하는 특성(feature) 선택</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>features <span class="op">=</span> [<span class="st">'MedInc'</span>, <span class="st">'HouseAge'</span>, <span class="st">'AveRooms'</span>, <span class="st">'Latitude'</span>]</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>target <span class="op">=</span> <span class="st">'MedHouseVal'</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>X_train <span class="op">=</span> df_train[features]           <span class="co">#2차원 배열</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 상관관계가 존재하는 특성(feature) 선택</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>features <span class="op">=</span> [<span class="st">'MedInc'</span>, <span class="st">'HouseAge'</span>, <span class="st">'AveRooms'</span>, <span class="st">'Latitude'</span>]</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>target <span class="op">=</span> <span class="st">'MedHouseVal'</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>X_train <span class="op">=</span> df_train[features]           <span class="co">#2차원 배열</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="de253cfb-8d66-40b9-84cd-f72ee3beb43f" class="cell" data-execution_count="16">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 선형 회귀모델 생성 및 학습</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> LinearRegression()</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>model.fit(X_train, y_train)</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 회귀계수(regression coefficient)</span></span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>pd.DataFrame({<span class="st">'Features'</span>: features, <span class="st">'Coefficient'</span>:model.coef_})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 선형 회귀모델 생성 및 학습</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> LinearRegression()</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>model.fit(X_train, y_train)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 회귀계수(regression coefficient)</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>pd.DataFrame({<span class="st">'Features'</span>: features, <span class="st">'Coefficient'</span>:model.coef_})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
 <div>
 
@@ -695,19 +607,19 @@ dtype: int64</code></pre>
 <section id="회귀모델-평가" class="level2">
 <h2 class="anchored" data-anchor-id="회귀모델-평가">6. 회귀모델 평가</h2>
 <div id="be2f27c5-64e8-4655-b10c-1179a8dcd168" class="cell" data-execution_count="22">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 평가 데이터에서도 학습 데이터에서 사용한 독립변수만 선택</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>X_test <span class="op">=</span> X_test[features]</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co">#학습 데이터로 학습한 회귀모델에 평가 데이터를 입력하여 예측값 계산</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> model.predict(X_test)</span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co">#평가 데이터의 실제 관측값과 예측값을 비교하여 모델</span></span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_squared_error, r2_score</span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>RMSE <span class="op">=</span> np.sqrt(mean_squared_error(y_test, y_pred))</span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>R2<span class="op">=</span> r2_score(y_test,y_pred)</span>
-<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'RMSE : </span><span class="sc">{</span>RMSE<span class="sc">:.3f}</span><span class="ss">'</span>)</span>
-<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'결정계수 : </span><span class="sc">{</span>R2<span class="sc">:.3f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 평가 데이터에서도 학습 데이터에서 사용한 독립변수만 선택</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>X_test <span class="op">=</span> X_test[features]</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co">#학습 데이터로 학습한 회귀모델에 평가 데이터를 입력하여 예측값 계산</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>y_pred <span class="op">=</span> model.predict(X_test)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co">#평가 데이터의 실제 관측값과 예측값을 비교하여 모델</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_squared_error, r2_score</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>RMSE <span class="op">=</span> np.sqrt(mean_squared_error(y_test, y_pred))</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>R2<span class="op">=</span> r2_score(y_test,y_pred)</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'RMSE : </span><span class="sc">{</span>RMSE<span class="sc">:.3f}</span><span class="ss">'</span>)</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'결정계수 : </span><span class="sc">{</span>R2<span class="sc">:.3f}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>RMSE : 0.794
 결정계수 : 0.520</code></pre>
@@ -719,18 +631,6 @@ dtype: int64</code></pre>
 <li>따라서 평균 오차가 비교적 큰 편이므로, 모델 성능 개선이 필요한 것으로 판단됨</li>
 <li>결정계수는 52.0%로 나타남</li>
 </ul>
-<div id="bc3bc5bf-894a-4e16-8ac5-8ce5f38a22a2" class="cell" data-execution_count="21">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 회귀계수</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>df_coef <span class="op">=</span> pd.DataFrame({<span class="st">'Feature'</span>: features, <span class="st">'Coefficient'</span>: model.coef_})</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_coef)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>    Feature  Coefficient
-0    MedInc     0.435658
-1  HouseAge     0.016937
-2  AveRooms    -0.019505
-3  Latitude    -0.045071</code></pre>
-</div>
-</div>
 
 
 </section>
